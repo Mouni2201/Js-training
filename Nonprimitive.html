@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+
+                //Arrays
+                let bookNames = ["Harry potter", "The Rich Dad and Poor Dad", "The Waves"];
+
+                console.log(bookNames);
+
+                 console.log(bookNames[0]); //here in Arrays numbers are index and its start with zero
+                 console.log(bookNames[1]);
+                 console.log(bookNames[2]);
+                 console.log(bookNames[3]); // ere there is no in index 3 so its shows undefined.
+
+
+                //  let authorsNames = ["Stephen King", "Jeff Lyons", "Anna K. Scotti"];
+                //  let authorsdateofBirth = [1934, 1957, 1956];
+                //  let authorbookdetails = ["If It Bleeds to present", "Rapid story Development", "The Big and Bad"];
+
+                let BookOneDetails = ["harrypotter", "JeffLyons", 1995];
+                 console.log(BookOneDetails[0]);
+                 console.log(BookOneDetails[1]);
+                 console.log(BookOneDetails[2]);
+                 console.log(BookOneDetails[3]);
+                 console.log(BookOneDetails[10]);
+                
+
+
+                 //objects
+
+                 let customerDetails = {
+                    "Name" : "Kushal",
+                     "Age" : 1,
+                     "AadharNo" : "0213-8934-89XX-XXX"
+                    
+                    }
+
+                    console.log(customerDetails);
+                    console.log(customerDetails.Name);
+                    console.log(customerDetails.Age);
+                    console.log(customerDetails.AadharNo);
+
+                let authorDetails = {
+                    Name : "Stephen King",
+                    Birthyear : 1887,
+                    Birthplace : "Germany",
+                    CharacterNames : ["Harry potter", "King", 1989 ],
+                    CharacterDetails : {
+                        CharacterName : "Harry",
+                        Role : "Hero"
+                    }
+        
+                }
+
+                // console.log(authorDetails.Name);
+                // console.log(authorDetails.Birthyear);
+                // console.log(authorDetails.Birthplace);
+                
+                console.log(authorDetails["Name"]);
+                console.log(authorDetails["Birthyear"]);
+                console.log(authorDetails["Birthplace"]);
+
+                console.log(authorDetails["CharacterNames"]);
+                console.log(authorDetails["CharacterDetails"].CharacterName);
+                console.log(authorDetails["CharacterDetails"].Role);
+
+
+                //Array of Objects
+                // {} []
+                 let cars = [
+                    {
+                    carName : "BMW",
+                    LaunchDate : "2012-08-30",
+
+                 },
+                 {
+                    carName : "Tesla",
+                    LaunchDate : "2019-02-12",
+
+                 }
+
+                ];
+                console.log(cars);
+                console.log(cars[0]);
+                console.log(cars[1]);
+                console.log(cars[0].carName);//BMW
+
+
+
+                 // Functions
+
+                 var bookName = function(){
+                    console.log("Harry Potter");
+                 }
+
+                 console.log(bookName); //display inside of function
+
+                 console.dir(bookName); //dir
+
+
+
+
+
+            </script>
+        </body>
+    </head>
+</html>
