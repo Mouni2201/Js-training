@@ -35,3 +35,14 @@ console.log(aboutMoreBooks[5][0]);
 console.log(aboutMoreBooks[6].title);
 console.log(aboutMoreBooks[6].Id);
 
+//changing Arrays
+const cars = ["BMW", "Skoda", "Volvo"];
+cars[0] = "Opel";
+console.log(cars);
+
+const weeks = ["sunday", "monday", "saturday"];
+weeks[2] = "tuesday";
+console.log(weeks);
+
+
+

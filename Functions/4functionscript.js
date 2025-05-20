@@ -17,13 +17,16 @@ console.dir(company);
 
 //Function declaration
 function personDetails(){
-let customerAge = 10;
+var customerAge = 10;
 console.log(customerAge);  //statement 1
 
 
-let car = "skoda";
+var car = "skoda";
 console.log(car);   //statement 2
 }
 
 personDetails(); //function calling
+
+
+let
 
