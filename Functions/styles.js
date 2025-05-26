@@ -3,7 +3,7 @@ console.log("Mounica");
 console.log("%c Mounica", "color:black");
 
 
-console.log("%c Mounica", "background-color:yellowgreen");
+console.log("%c Mounica", "background-color:yellowgreen;color:blue;font-size:50px");
 
 console.log("%c      ", "background-color:red");
 
@@ -38,6 +38,7 @@ function secondSection(){
 
 }
 secondSection();
+
 function thirdSection(){
     console.log("%c      ", "background-color:purple");
     console.log("%c      ", "background-color:darkgray");

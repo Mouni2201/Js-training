@@ -31,7 +31,7 @@ let aboutMoreBooks = [ "Harrypoter", "John", 1, null, undefined, ["Harrypotter",
 
 console.log(aboutMoreBooks);
 console.log(aboutMoreBooks[5]);
-console.log(aboutMoreBooks[5][0]);
+console.log(aboutMoreBooks[5][1]);
 console.log(aboutMoreBooks[6].title);
 console.log(aboutMoreBooks[6].Id);
 
