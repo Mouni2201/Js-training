@@ -1,0 +1,47 @@
+var MumbaiIndians = "Mumbai"; //global variable
+
+//local block1
+{
+console.log("local-Block1", MumbaiIndians); //Mumbai
+let RCB = "Banglore";
+console.log("local-Block1", RCB); //Banglore
+// console.log("local-Block1", CSK); //not defined
+ }
+
+//local block2
+{
+    console.log("local-Block2", MumbaiIndians); //Mumbai
+    let CSK = "Chennai";
+    console.log("local-Block2", CSK); //Chennai
+    // console.log("local-Block2", RCB); // not defined
+}
+
+
+console.log("GlobalBlock", MumbaiIndians); //Mumbai
+// console.log("GlobalBlock", CSK); //not defined
+// console.log("GlobalBlock", RCB); //not defined
+
+
+//another example with using function
+var signalName = "Wi-fi";
+
+function Room1(){
+    let Room1 = "Speed";
+    console.log(Room1);
+    
+    console.log(signalName);
+    console.log(Room2);
+
+}Room1();
+function Room2(){
+    let Room2 = "Slow"
+    console.log(Room2);
+    console.log(Room1);
+    console.log(signalName);
+}
+
+Room2();
+
+
+console.log(Room1);
+console.log(Room2);
