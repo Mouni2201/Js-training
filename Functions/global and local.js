@@ -25,22 +25,22 @@ console.log("GlobalBlock", MumbaiIndians); //Mumbai
 //another example with using function
 var signalName = "Wi-fi";
 
-function Room1(){
+function Room1Status(){
     let Room1 = "Speed";
     console.log(Room1);
     
     console.log(signalName);
     console.log(Room2);
 
-}Room1();
-function Room2(){
+}Room1Status();
+function Room2Status(){
     let Room2 = "Slow"
     console.log(Room2);
     console.log(Room1);
     console.log(signalName);
 }
 
-Room2();
+Room2Status();
 
 
 console.log(Room1);
