@@ -25,7 +25,20 @@ console.log(author.name);
 console.log(author.DOB);
 console.log(author.books);
 console.log(author.getBooksCount());
+//----------------------------------------------------------
 
+const calculator = {
+
+    add: function(a, b){
+        return a+b;
+    },
+
+    subtract (a, b){
+        return a-b;
+    }
+};
+console.log(calculator.add(5, 3));
+console.log(calculator.subtract(7, 2));
 
 
 //--------------------------------members of Array -------------------------------
