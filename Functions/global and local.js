@@ -2,17 +2,19 @@ var MumbaiIndians = "Mumbai"; //global variable
 
 //local block1
 {
-console.log("local-Block1", MumbaiIndians); //Mumbai
+
 let RCB = "Banglore";
 console.log("local-Block1", RCB); //Banglore
+console.log("local-Block1", MumbaiIndians); //Mumbai
 // console.log("local-Block1", CSK); //not defined
  }
 
 //local block2
 {
-    console.log("local-Block2", MumbaiIndians); //Mumbai
+    
     let CSK = "Chennai";
     console.log("local-Block2", CSK); //Chennai
+    console.log("local-Block2", MumbaiIndians); //Mumbai
     // console.log("local-Block2", RCB); // not defined
 }
 

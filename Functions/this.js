@@ -27,11 +27,11 @@
 
 
 // var movies = {
-//     Name : "RRR",
-//     Director : "SSRajamouli",
-//     awrads : "Ascar",
-//     releaseDate : "March 24, 2022",
-//     getmovieDetails : function(){
+//     Name : "RRR",                                 //members /property
+//     Director : "SSRajamouli",                      //members/property
+//     awrads : "Ascar",                               //members/property
+//     releaseDate : "March 24, 2022",                 //members/property
+//     getmovieDetails : function(){                   //method 
 //         console.log(this);
 //         console.log(this.awrads);
 //         console.log(this.releaseDate);
@@ -47,7 +47,7 @@
 // var movies = {
 //     Name : "RRR",
 //     Director : "SSRajamouli",
-    
+
 //     releaseDate : "March 24, 2022",
 //     getmovieDetails : function(){
 //         console.log(this);
@@ -71,40 +71,39 @@
 //     console.log(this);
 // }
 // new collegueName();   //new function object created when you add new
- 
 
-// function PersonDetails(personName, personAge){
 
-//     this.name = "personName";
-//     this.age =  "personAge";
-//     this.State = "AndhraPradesh";
-//     console.log(this);
+function PersonDetails(personName, personAge){
 
-// }
-// new PersonDetails("Sravani", 24);
+    this.name = "personName";
+    this.age =  "personAge";
+    this.State = "AndhraPradesh";
+    console.log(this);
+
+}
+new PersonDetails("Sravani", 24);
 
 
 //----------------------------------Arrow Function------------------------------
 
 //dont have own this, they inherit the parent scope 
- 
+
 
 // var movies = {
-//     Name : "RRR",
-//     Director : "SSRajamouli",
-//     awrads : "Ascar",
-//     releaseDate : "March 24, 2022",
-//     getmovieDetails : ()=>{
+//     Name: "RRR",
+//     Director: "SSRajamouli",
+//     awrads: "Ascar",
+//     releaseDate: "March 24, 2022",
+//     getmovieDetails: () => {
 //         console.log("this", this);
 //         console.log(this.awrads); // undefined
 //         console.log(this.releaseDate); //undefined beacuse in arrow function the scope is refers global context
-
 //     }
 
 // }
 // movies.getmovieDetails();
 
-
+// declare variables in global scope.lets see how the arrow function works
 // var awrads = "Ascar";
 //  var releaseDate = "March 24, 2022";
 
