@@ -1,45 +1,46 @@
 
 
-function cricketerDetails(personName, nickname, favouriteDish, retirementDate){
-    console.log(personName);
-    console.log(nickname);
-    console.log(favouriteDish);
-    console.log(retirementDate);
-}
-cricketerDetails("MS.Dhoni","Mahi","Butter Chicken", 2025);
+// function cricketerDetails(personName, nickname, favouriteDish, retirementDate){
+//     console.log(personName);
+//     console.log(nickname);
+//     console.log(favouriteDish);
+//     console.log(retirementDate);
+// }
+// cricketerDetails("MS.Dhoni","Mahi","Butter Chicken", 2025);
 
 
-function cricketerDetails(personName, nickname, favouriteDish, retirementDate){
-    console.log("%cPersonName:" ,"background-color:yellogreen" ,personName);
-    console.log("Nickname:" ,nickname);
-    console.log("FavouriteDish:" ,favouriteDish);
-    console.log("RetirementDate:" ,retirementDate);
-}
-cricketerDetails("MS.Dhoni","Mahi","Butter Chicken", 2025);
+// function cricketerDetails(personName, nickname, favouriteDish, retirementDate){
+//     console.log("%cPersonName:" ,"background-color:yellogreen" ,personName);
+//     console.log("Nickname:" ,nickname);
+//     console.log("FavouriteDish:" ,favouriteDish);
+//     console.log("RetirementDate:" ,retirementDate);
+// }
+// cricketerDetails("MS.Dhoni","Mahi","Butter Chicken", 2025);
 
 
 //optionl parameter
 
-function cricketerDetails(personName, nickname, favouriteDish, retirementDate){
-   console.log("%cPersonName:" ,"background-color:yellogreen" ,personName);
-    console.log("Nickname:" ,nickname);
-    console.log("FavouriteDish:" ,favouriteDish);
-    console.log("RetirementDate:" ,retirementDate);
-    retirementDate = retirementDate || "no data Defined";
-}
-cricketerDetails("MS.Dhoni","Mahi","Butter Chicken");
+// function cricketerDetails(personName, nickname, favouriteDish, retirementDate){
+//    console.log("PersonName:" ,personName);
+//     console.log("Nickname:" ,nickname);
+//     console.log("FavouriteDish:" ,favouriteDish);
+//     //RetirementDate = retirementDate || "no data Defined";
+//     console.log("RetirementDate:" ,retirementDate); //undefined
+    
+// }
+// cricketerDetails("MS.Dhoni","Mahi","Butter Chicken");
 
 
 //default parameter
 
-function cricketerDetails(personName, nickname, favouriteDish="not mentioned", retirementDate="Data is not avalable"){
-   console.log("%cPersonName:" ,"background-color:yellogreen" ,personName);
-    console.log("Nickname:" ,nickname);
-    console.log("FavouriteDish:" ,favouriteDish);
-    console.log("RetirementDate:" ,retirementDate);
+// function cricketerDetails(personName, nickname, favouriteDish="not mentioned", retirementDate="Data is not avalable"){
+//    console.log("PersonName:" ,personName);
+//     console.log("Nickname:" ,nickname);
+//     console.log("FavouriteDish:" ,favouriteDish);
+//     console.log("RetirementDate:" ,retirementDate);
 
-}
-cricketerDetails("MS.Dhoni","Mahi");
+// }
+// cricketerDetails("MS.Dhoni","Mahi");
 
 
 
