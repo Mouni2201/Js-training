@@ -54,12 +54,39 @@ sayHello(function(a,b){
 
 
 
-function fetchData(callback) {
-  setTimeout(() => {
-    callback("Data received");
-  }, 1000);
+// function fetchData(callback) {
+//   setTimeout(() => {
+//     callback("Data received");
+//   }, 1000);
+// }
+
+// fetchData((data) => {
+//   console.log(data);
+// });
+
+
+function fetchData(callback){
+  console.log("fetching Data");
+
+setTimeout(()=>{
+  console.log("Data Recieved");
+  callback();
+  
+}, 2000);
 }
 
-fetchData((data) => {
-  console.log(data);
-});
+function processData(){
+  console.log("Processing Data");
+}
+fetchData(processData);
+
+
+
+function greet(name, callback){
+  console.log("Hello" , name);
+  callback();
+}
+function sayGoodBye(){
+  console.log("GoodBye!!");
+}
+greet("Mounica", sayGoodBye);
