@@ -65,3 +65,14 @@ setTimeout(function(){
 setTimeout(()=>{
     console.log("Hello");
 },2000);
+
+
+
+
+function callDetails(callbackfn){
+    callbackfn("Hello");
+
+}
+callDetails((message)=>{
+    console.log(message);
+});

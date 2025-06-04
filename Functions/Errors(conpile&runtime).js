@@ -115,4 +115,53 @@ let transcations = ["Creditcard", "Debitcard", "Savings"];
 console.log(`Number of transcations: ${transcations.length}`);
 
 
+//---------------------------------------------------------------------------
+
+try {
+    let x = undefinedVariable; // ReferenceError
+} catch (error) {
+    console.error("Caught an error:", error.name); // ReferenceError
+    console.log(error.message); // undefinedVariable is not defined
+}
+//----------------------------------------------------------------
+
+try {
+    let result = Mounica;
+    console.log(result);
+}
+// catch(ex){
+//     console.log(ex);
+catch (error) {
+    console.log("caught error:", error.message);
+
+}
+finally {
+    console.log("finally output comes");
+}
+
+//-----------------------------------------------------------------------------
+
+function readfile() {
+    
+        let fileOne = false;
+        try {
+
+        fileOne = true;
+        throw new Error ("Read the error");
+    }
+    catch(ex){
+        console.log("caught error:", ex.message);
+    }
+    finally{
+        if(fileOne) {
+        console.log("Close the file");
+        fileOne = false;
+    }
+    }
+    
+}
+
+readfile();
+//================================================================
+
 
