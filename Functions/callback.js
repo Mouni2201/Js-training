@@ -53,6 +53,15 @@ sayHello(function(a,b){
 });
 
 
+function sayHello(callbackfn){
+  callbackfn()
+
+}
+sayHello(function(){
+  console.log("Hi");
+})
+
+
 
 // function fetchData(callback) {
 //   setTimeout(() => {
