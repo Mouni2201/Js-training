@@ -62,7 +62,7 @@
 // allApiResults();
 //----------------------------------------------------------------------------------------------
 
-//for refernce
+// for refernce
 // fetch(firstApiAddress).then((result)=>{
 //     //console.log(result); // it leads to promise
 //     return result.json()
