@@ -35,3 +35,27 @@ console.log("My final balance after withdrawl:", latestbalance)
  
  
 }, 5000)
+
+
+//---------------------------------------------------------------------------------------
+
+// class bankdetails{
+//     constructor(banknam,holdername,accountnum,ammount){
+//     this.bankename=banknam;
+//     this.accountholder=holdername;
+//     this.accountnumber=accountnum;
+//     this.initialammount=ammount;
+//      }
+//    depositammount(ammountdeposited){
+//         this.initialammount = this.initialammount +  ammountdeposited;
+//         //console.log(`Ammount deposited in ${this.accountholder} account is ${ammountdeposited}`)
+//     }
+//     checkbalance(){
+//         return this.initialammount;
+//     }
+// }
+// let bank=new bankdetails("SBI","Deepu","0123456",5000);
+// bank.depositammount(200);
+
+// let bankstatement=bank.checkbalance();
+// console.log(`Balance after ammount deposited is ${bankstatement}`);
