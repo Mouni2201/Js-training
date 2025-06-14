@@ -30,7 +30,7 @@ nameOfStudent();
 // Anonymous function with passing parameters
 
 let laptopDetails = function(laptopName, behaviour, cost){
-    console.log(laptopName);
+    console.log("LaptopName:", laptopName);
     console.log(behaviour);
     console.log(cost);
 

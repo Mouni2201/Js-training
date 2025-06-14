@@ -49,8 +49,8 @@ let getDayDetails = (day1, day2, day3)=>{
     return `InDay Three times we take food - ${day1}, ${day2}, ${day3}`;
 
 }
-getDayDetails("MorningBreakfast", "AfternoonLunch", "NightDinner")
-console.log(getDayDetails);
+console.log(getDayDetails("MorningBreakfast", "AfternoonLunch", "NightDinner"))
+// console.log(getDayDetails);
 
 
 //setTimeOut
