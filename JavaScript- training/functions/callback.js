@@ -99,3 +99,75 @@ function sayGoodBye(){
   console.log("GoodBye!!");
 }
 greet("Mounica", sayGoodBye);
+
+
+
+//predefined function as callback function
+//------------------------------------------------------------------------------------
+// function myName(){
+//   console.log("My name is Sravani")
+// }
+// myName();
+ 
+// setTimeout(myName, 5000)   //executes myName() funciton after 5000ms
+//setTimeout is the built in function in JS.
+ 
+ 
+ 
+//simple call back function withut parameters
+//------------------------------------------------------------------------------------
+// function setmyName(callbackfn){
+//   callbackfn();
+ 
+// }
+// function myName(){
+//   console.log("My Name is Sravani and my favourite food is Biryani")
+// }
+// setmyName(myName) // here we passed a named function as an argument to setmyName
+ 
+//call back function by passing  anonymous function as an argument withput parameters
+//------------------------------------------------------------------------------------
+ 
+// function setmyName(callbackfn){
+//   callbackfn();
+ 
+// }
+// setmyName(function myName(){
+//   console.log("My favourite player is MS Dhoni")
+// })
+ 
+//call back function by passing arrow function as an argument withput parameters
+//------------------------------------------------------------------------------------
+// function setmyName(callbackfn){
+//   //callbackfn();
+//   setTimeout(callbackfn, 5000);
+ 
+// }
+// setmyName(() => {
+//   console.log("I am learning JavaScript")
+// })
+ 
+//callback function by passing argumnets to the callback function
+//------------------------------------------------------------------------------------
+// function MovieDetails(callbackfn){
+//   callbackfn("Godavari", "Seetharamam", "Khaleja");
+ 
+// }
+// MovieDetails((Movie1, Movie2, Movie3) => {
+//   console.log(`My favourite Movie among the three is ${Movie1}`);
+//   console.log(`${Movie2} is the debut film for Mrunal Thakur`);
+//   console.log(`The re-release of ${Movie3} got better response than it's previous release`)
+// })
+//------------------------------------------------------------------------------------
+ 
+ 
+//callback function having two parameters
+// function getEmployeeDetails(EmployeeName, callbackfn){
+//   callbackfn(EmployeeName, "Mounica", "Hari");
+ 
+// }
+// getEmployeeDetails("Sravani", (Employee1, Employee2) => {
+//   console.log(`${Employee1} is very dedicated towards work`)
+//   console.log(`I will reach out to ${Employee2} for the issue related details`)
+// })
+ 

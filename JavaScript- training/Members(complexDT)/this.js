@@ -7,12 +7,13 @@
 // var IPLTeams =["RCB", "CSK", "SRH"];
 // var names = ["Kohli", "Dhoni", "Niteesh" ];
 // console.log(this);
+// console.log(this.IPLTeams)
 
 // var getTeamNames = function(){
 //     return names;
 // }
 
-//if we use this instead of var in above example, the output comes same.
+// if we use this instead of var in above example, the output comes same.
 // this.IPLTeams =["RCB", "CSK", "SRH"];
 // this.names = ["Kohli", "Dhoni", "Niteesh" ];
 // console.log(this);
@@ -20,6 +21,8 @@
 // this.getTeamNames = function(){
 //     return names;
 // }
+
+// console.log(getTeamNames());
 // // let awardwinning = ["IPLTrophy2025", "IPLTrophy2023", "NO"]  //let is not a global variable, it is block
 
 // var wardwinning = ["IPLTrophy2025", "IPLTrophy2023", "NO"]; // var is a global
@@ -73,15 +76,15 @@
 // new collegueName();   //new function object created when you add new
 
 
-function PersonDetails(personName, personAge){
+// function personDetails(personName, personAge){
 
-    this.name = "personName";
-    this.age =  "personAge";
-    this.State = "AndhraPradesh";
-    console.log(this);
+//     this.name = "personName";
+//     this.age =  "personAge";
+//     this.State = "AndhraPradesh";
+//     console.log(this);
 
-}
-new PersonDetails("Sravani", 24);
+// }
+// new personDetails("Sravani", 24);
 
 
 //----------------------------------Arrow Function------------------------------
@@ -104,20 +107,20 @@ new PersonDetails("Sravani", 24);
 // movies.getmovieDetails();
 
 // declare variables in global scope.lets see how the arrow function works
-// var awrads = "Ascar";
-//  var releaseDate = "March 24, 2022";
+var awrads = "Ascar";
+ var releaseDate = "March 24, 2022";
 
-// var movies = {
-//     Name : "RRR",
-//     Director : "SSRajamouli",
-//     awrads : "Ascar",
-//     releaseDate : "March 24, 2022",
-//     getmovieDetails : ()=>{
-//         console.log("this:", this);
-//         console.log("Awards:" , this.awrads); //here get output the data from global context
-//         console.log("releaseDate:", this.releaseDate); //here get output the datas from global context
-//     }
+var movies = {
+    Name : "RRR",
+    Director : "SSRajamouli",
+    // awrads : "Ascar",
+    // releaseDate : "March 24, 2022",
+    getmovieDetails : ()=>{
+        console.log("this:", this);
+        console.log("Awards:" , this.awrads); //here get output the data from global context
+        console.log("releaseDate:", this.releaseDate); //here get output the datas from global context
+    }
 
-// }
-// movies.getmovieDetails();
+}
+movies.getmovieDetails();
 

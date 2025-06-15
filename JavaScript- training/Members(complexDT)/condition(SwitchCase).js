@@ -1,4 +1,4 @@
-//SWitch case
+//Switch case
 
 
 let day = 5;
@@ -37,8 +37,8 @@ console.log(dayName);
 
 let number1 = 10;
 let number2 = 4;
-// let operator = "*";
-let operator = "+";
+let operator = "*";
+// let operator = "+";
 let result;
 
 switch(operator){
@@ -74,10 +74,10 @@ switch(grade){
         console.log("performance is good");
     break;
     case 'D':
-    case 'F':
+    case 'E':
         console.log("Needs to improvement");
     break;
-    case 'E':
+    case 'F':
         console.log("fail");
     break;
     default:

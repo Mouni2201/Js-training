@@ -44,8 +44,8 @@ else{
 //------------------------------------------
 
 let AmazonAccess = false;
-let NetflixAccess = true;
-let DisneyHotstarAccess = true;
+let NetflixAccess = false;
+let DisneyHotstarAccess = false;
 
 if(AmazonAccess){
     console.log("Yes!! I have Access for Amazon prime");
