@@ -1,8 +1,8 @@
 //callbackhell
 
-function stepOne(stepTwocallbackfn){
+function stepOne(callbackfn){
      console.log("stepOne");
-    stepTwocallbackfn();
+    callbackfn();
    
     
 }

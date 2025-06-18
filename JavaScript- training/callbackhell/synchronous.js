@@ -7,6 +7,15 @@ function sleep(milliseconds){
     }
 }
 
+// function sleep(){
+//     var startDateTime = new Date().getTime();
+//     var endDateTime = startDateTime+5000;
+
+//     while(new Date().getTime()<endDateTime){
+
+//     }
+// }
+
 function stepOne(){
     
    
@@ -70,6 +79,13 @@ console.log("All tasks are completed");
 //     });
 // });
 
+
+
+
+
+
+
+
 //----------------------------------------------------------------------
 function downloadVideo(){
     console.log("downloadVideo");
@@ -92,4 +108,31 @@ chatWithFrd();
 console.timeEnd("my TaskTime");
 console.log("All works are done");
 
+
+//-------------------------------------------------------------------------------
+function haldiEvent(callbackfn){
+console.log("haldiEvent")
+callbackfn();
+}
+function mehandiEvent(callbackfn){
+console.log("mehandiEvent")
+callbackfn();
+}
+ function Reception(callbackfn){
+console.log("Reception")
+callbackfn();
+
+ }
+ function marriage(callbackfn){
+console.log("marriage")
+
+ }
+
+ haldiEvent(()=>{
+    mehandiEvent(()=>{
+        Reception(()=>{
+            marriage();
+        });
+    });
+ });
 
