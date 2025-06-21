@@ -1,5 +1,5 @@
 //resolve, reject are handlers/ parametrs
-//new promise devolps asynchronous
+//new promise devolps asynchronous call
 
 // let myPromise = new Promise((resolve, reject)=>{
 //     if(true){
@@ -17,6 +17,22 @@
 // }).catch((exception)=>{
 //     console.log(exception);
 // })
+
+
+let mypromise = new promise((resolve, reject)=>{
+ if(true){
+        resolve("Success Message");
+    }
+    else{
+        reject("Fail Message");
+    }
+})
+
+mypromise.then((result)=>{
+    console.log(result);
+}).catch((exception)=>{
+console.log(exception);
+})
 
 
 //---------------------------------------------------------------
@@ -92,7 +108,7 @@ getData().then((result)=>{
 //     return new Promise((resolve, reject)=>{
 //         setTimeout(()=>{
 //             console.log("Task completed (4s)");
-//             resolve("Success")
+//             resolve("HArry")
 //         },5000)
 //     });
 // }

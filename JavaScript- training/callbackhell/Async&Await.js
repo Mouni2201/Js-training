@@ -12,7 +12,7 @@
 // }
 // let bascics = getData();
 // console.log(bascics);           // it will return promise
-//---------------------------------------------------------------
+// //---------------------------------------------------------------
 
 // async function season(){
 //     return "Winter";
@@ -64,10 +64,10 @@
 //     console.log("The Captain of MumbaiIndains is", response);
 // }).catch((error)=>{
 //     console.log(error);
-//     //document.write(error);
+//     document.write(error);
 // })
 
-//-------------------------------------------------------------------
+///-------------------------------------------------------------------
 
 // function IPLSeasonDetails(){
 //    return new Promise((resolve, reject)=>{
@@ -81,9 +81,9 @@
 // async function IPLSeasonDetails2023(){
 //     console.log("Dhone is the captain of CSK");
 //     console.log("Gill is the captain of GT");
-//     // await IPLSeasonDetails().then((result)=>{
-//     //     console.log("Kohli is the caption of", result);
-//     //});
+//     //  await IPLSeasonDetails().then((result)=>{
+//     //      console.log(result);
+//     // });
 
 //     let Details = await IPLSeasonDetails();
 //     console.log(Details);
@@ -93,44 +93,6 @@
 // IPLSeasonDetails2023();
 
 //==================================================================================
-
-// function movieRRRDetails(){
-//     return new Promise((resolve)=>{
-//         console.log("please wait 5 seconds");
-//         setTimeout(() => {
-//             resolve("The director of RRR Movie is SS.Rajamouli");
-//         }, 5000);
-//     })
-// }
-
-// function movieKalkiDetails(){
-//     return new Promise((resolve)=>{
-//         console.log("please wait 10 seconds");
-//         setTimeout(() => {
-//             resolve("The director of RRR Movie is NagAswin");
-//         }, 10000);
-//     })
-// }
-
-// async function movieDetails(){
-//     console.log("The RRR movie song get Oscar Award");
-//     console.log("The kalki movie has part2");
-
-//     let RRRDetails = await movieRRRDetails();
-//     console.log(RRRDetails);
-
-//     let KalkiDetails = await movieKalkiDetails();
-//     console.log(KalkiDetails);
-
-//     console.log("Received all the info for latest movies");
-// }
-
-// // movieDetails().then((result)=>{
-// //     console.log(result);  //it gives undefined
-// // })
-// movieDetails();
-
-//------------------------------------------------------------------------------
 
 function movieRRRDetails(){
     return new Promise((resolve)=>{
@@ -153,24 +115,62 @@ function movieKalkiDetails(){
 async function movieDetails(){
     console.log("The RRR movie song get Oscar Award");
     console.log("The kalki movie has part2");
-    console.time("Time start")
+
     let RRRDetails = await movieRRRDetails();
     console.log(RRRDetails);
 
     let KalkiDetails = await movieKalkiDetails();
     console.log(KalkiDetails);
 
-    console.log("Received the info for latest movies");
-    console.timeEnd("Time start")
-
-    return 'I got all the info from Sravani';
+    console.log("Received all the info for latest movies");
 }
-//here i gave at last return statement the movie details function goes to async function and the return comes the result.
-movieDetails().then((result)=>{
-    console.log(result);  
-})
 
-//------------------------------------------------------------------------------------------
+movieDetails().then((result)=>{
+    console.log(result);  //it gives undefined
+})
+movieDetails();
+
+// //------------------------------------------------------------------------------
+
+// // function movieRRRDetails(){
+// //     return new Promise((resolve)=>{
+// //         console.log("please wait 5 seconds");
+// //         setTimeout(() => {
+// //             resolve("The director of RRR Movie is SS.Rajamouli");
+// //         }, 5000);
+// //     })
+// // }
+
+// // function movieKalkiDetails(){
+// //     return new Promise((resolve)=>{
+// //         console.log("please wait 10 seconds");
+// //         setTimeout(() => {
+// //             resolve("The director of RRR Movie is NagAswin");
+// //         }, 10000);
+// //     })
+// // }
+
+// // async function movieDetails(){
+// //     console.log("The RRR movie song get Oscar Award");
+// //     console.log("The kalki movie has part2");
+// //     console.time("Time start")
+// //     let RRRDetails = await movieRRRDetails();
+// //     console.log(RRRDetails);
+
+// //     let KalkiDetails = await movieKalkiDetails();
+// //     console.log(KalkiDetails);
+
+// //     console.log("Received the info for latest movies");
+// //     console.timeEnd("Time start")
+
+// //     return 'I got all the info from Sravani';
+// // }
+// // //here i gave at last return statement the movie details function goes to async function and the return comes the result.
+// // movieDetails().then((result)=>{
+// //     console.log(result);  
+// // })
+
+// //------------------------------------------------------------------------------------------
 
 
 

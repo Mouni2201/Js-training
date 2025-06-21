@@ -119,59 +119,59 @@
 //     });
 // }
 // Promise.all([FirstApiPromise(), SecondApiPromise(), ThirdApiPromise()]).then((AllResults)=>{
-//     console.log(AllResults);
+//    console.log(AllResults);
 
 // })
 //--------------------------------------------------------------------------------------------------
-let firstApiAddress = "https://jsonplaceholder.typicode.com/todos/1";  //fake api's
+// let firstApiAddress = "https://jsonplaceholder.typicode.com/todos/1";  //fake api's
 
-let secondApiAddress = "https://jsonplaceholder.typicode.com/todos/2";
+// let secondApiAddress = "https://jsonplaceholder.typicode.com/todos/2";
 
-let ALLApiAddress = "https://jsonplaceholder.typicode.com/todos/";
+// let ALLApiAddress = "https://jsonplaceholder.typicode.com/todos/";
 
 
-function FirstApi(){
-    return fetch(firstApiAddress);      //promise
+// function FirstApi(){
+//     return fetch(firstApiAddress);      //promise
 
-}
-function SecondApi(){
-    return fetch(secondApiAddress);     //promise
+// }
+// function SecondApi(){
+//     return fetch(secondApiAddress);     //promise
     
-}
+// }
 
-function ThirdApi(){
-    return fetch(ALLApiAddress);           //promise
+// function ThirdApi(){
+//     return fetch(ALLApiAddress);           //promise
     
-}
+// }
 
-async function allApiResults(){
+// async function allApiResults(){
 
-    try{
-    await FirstApi().then((data)=>{
-        return data.json()    //promise
+//     try{
+//     await FirstApi().then((data)=>{
+//         return data.json()    //promise
 
-    }).then((data)=>{
-         console.log(data);
-     });
- }
- catch(err){
-     console.log(err);
- } 
-     await SecondApi().then((data)=>{
-         return data.json()    //promise
+//     }).then((data)=>{
+//          console.log(data);
+//      });
+//  }
+//  catch(err){
+//      console.log(err);
+//  } 
+//      await SecondApi().then((data)=>{
+//          return data.json()    //promise
 
-   }).then((data)=>{
-         console.log(data);
-    });
+//    }).then((data)=>{
+//          console.log(data);
+//     });
 
 
     
-     await ThirdApi().then((data)=>{
-        return data.json()    //promise
+//      await ThirdApi().then((data)=>{
+//         return data.json()    //promise
 
-    }).then((data)=>{
-        console.log(data);
-     });
+//     }).then((data)=>{
+//         console.log(data);
+//      });
 
-}
-allApiResults();
+// }
+// allApiResults();
