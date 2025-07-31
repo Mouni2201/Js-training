@@ -25,41 +25,41 @@
 // })
 //--------------------------------------------------------------------------------------------
 
-// let firstApiAddress = "https://jsonplaceholder.typicode.com/todos/1";  //fake api's
+let firstApiAddress = "https://jsonplaceholder.typicode.com/todos/1";  //fake api's
 
-// let secondApiAddress = "https://jsonplaceholder.typicode.com/todos/2";
+let secondApiAddress = "https://jsonplaceholder.typicode.com/todos/2";
 
-// let ALLApiAddress = "https://jsonplaceholder.typicode.com/todos/";
+let ALLApiAddress = "https://jsonplaceholder.typicode.com/todos/";
 
 
-// function FirstApi(){
-//     return fetch(firstApiAddress);      //promise
+function FirstApi(){
+    return fetch(firstApiAddress);      //promise
 
-// }
-// function SecondApi(){
-//     return fetch(secondApiAddress);     //promise
+}
+function SecondApi(){
+    return fetch(secondApiAddress);     //promise
     
-// }
+}
 
-// function ThirdApi(){
-//     return fetch(ALLApiAddress);           //promise
+function ThirdApi(){
+    return fetch(ALLApiAddress);           //promise
     
-// }
+}
    
-// async function allApiResults(){
-//     let resultofFirstApi = await FirstApi();
-//     console.log(resultofFirstApi);
+async function allApiResults(){
+    let resultofFirstApi = await FirstApi();
+    console.log(resultofFirstApi);
     
-//     let resultofSecondApi = await SecondApi();
-//     console.log(resultofSecondApi);
+    let resultofSecondApi = await SecondApi();
+    console.log(resultofSecondApi);
 
-//     let resultofThirdApi = await ThirdApi();
-//     console.log(resultofThirdApi);
+    let resultofThirdApi = await ThirdApi();
+    console.log(resultofThirdApi);
 
-//     console.log("Got info of all APIAddresses");
-//  }
+    console.log("Got info of all APIAddresses");
+ }
 
-// allApiResults();
+allApiResults();
 //----------------------------------------------------------------------------------------------
 
 // for refernce
@@ -93,7 +93,7 @@
 
 
 // function SecondApiPromise(){
-//     return fetch(firstApiAddress);      //promise
+//     return fetch(secondApiAddress);      //promise
 
 // }
 
@@ -107,7 +107,7 @@
 
 
 // function ThirdApiPromise(){
-//     return fetch(firstApiAddress);      //promise
+//     return fetch(ThirdApiAddress);      //promise
 
 // }
 

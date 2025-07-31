@@ -38,5 +38,5 @@ class myths extends languages{
 let mylanguage = new myths("telugu")
 mylanguage.speak();
 
-
+                                                                   
 //-----------------------------------------------------------------------------------
